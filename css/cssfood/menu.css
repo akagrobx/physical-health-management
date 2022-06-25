@@ -1,0 +1,34 @@
+
+.container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    ul {
+        padding: 3rem;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0);
+    }
+
+  #addMenu  {
+    font-family: 'Sarabun', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #addMenu  td, #addMenu  th {
+    border: 1px solid #EAB66A;
+    padding: 8px;
+  }
+  
+  #addMenu  {background-color: #FAF5D1;}
+  
+  #addMenu tr:hover {background-color: #FAF5D1;}
+  
+  #addMenu th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #EAB66A;
+    color: black;
+  }

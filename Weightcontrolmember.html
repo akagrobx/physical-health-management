@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Mobile Application HTML5 Template">
+  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+  <title>Web Application For Physical Health Management</title>
+  <link rel="shortcut icon" href="img/iconn.png" type="image/x-icon">
+
+
+
+  <!--index.html-->
+  <link rel="stylesheet" href="vendor/animate/animate.css">
+  <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/mobster.css">
+
+
+  <!--font-->
+  <link href="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+
+  
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-storage.js"></script>  
+
+</head>
+<body>
+
+
+<!--index.html-->
+
+<nav class="navbar navbar-expand-lg navbar-light navbar-floating">
+  <div class="container">
+    <a class="navbar-brand" href="indexmember.html">
+      <img src="img/iconn.png" alt="" width="120">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ml-lg-5 mt-3 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="indexmember.html">หน้าหลัก</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="foodmember.html">อาหาร</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Weightcontrolmember.html">ควบคุมน้ำหนัก</a>
+        </li>
+     
+        <li class="nav-item">
+          <a class="nav-link" href="https://fireboard.xyz/show--MRxyC8qlkapMZJNTw4x.html">Dashboard</a>
+        </li>
+      </ul>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <div class="dropdown narbar-right">
+              <button 
+              id="option-id"
+              class="btn btn-light dropdown-toggle bg-dark text text-white"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >
+                  ยินดีต้อนรับ : )
+              </button>
+
+              <div
+              class="dropdown-menu"
+              aria-labelledby="option-id"
+              >
+
+              <a class="dropdown-item" href="info.html">
+                 ข้อมูลส่วนตัว
+              </a>
+
+           
+            
+              <a class="dropdown-item" href="noteexercise_plan.html">
+                บันทึกสัดส่วน
+              </a>
+
+            <a class="dropdown-item" href="menu_member.html">
+              ไดอารี่อาหารของฉัน
+           </a>
+
+
+             
+             <a class="dropdown-item" href="exerciseplanmb.html">
+              แพลนออกกำลังกาย
+            </a>
+
+              <a class="dropdown-item" href="sleepmb.html">
+                บันทึกการนอน
+            </a>
+
+              <a class="dropdown-item" onclick="logout()">
+                  ออกจากระบบ
+              </a>
+            </div>
+        </div>
+
+        </div>
+     </div>
+    </div>
+    </nav><br><br>
+ 
+
+ 
+<!--Box-->
+<div class="hero-caption pt-6">
+    <div class="container h-100">
+        <div class="page-section bg-white fg-white">
+          <center>
+
+            <h3><font color="#2D435B"><b>การควบคุมน้ำหนัก</b></h3>
+
+                <br>การทำให้น้ำหนักของตัวเรานั้นอยู่ในเกณฑ์ที่เหมาะสม 
+                <br><b>ดังนั้น</b> การควบคุมน้ำหนักจึงมีความหมายทั้งการ
+                <br>ควบคุมน้ำหนักที่มากเกินไปและน้อยเกินไปให้อยู่ใน<font color="#ED407B">เกณฑ์ที่พอดี</font><font color="#2D435B">นั้นเอง
+
+                <br><br>เพราะการที่เรา<b><font color="#ED407B">มีน้ำหนักตัวมากเกินไป !?</font></b>
+                <br>
+                <br>เป็นปัญหาใหญ่ที่จำเป็นต้องมีการดูแลอย่างเร่งด่วน! เพื่อลดผลกระทบทั้งทางด้านร่างกาย
+                <br>สุขภาพ ครอบครัวสังคม และเศรษฐกิจ ค่าใช้จ่ายที่เกิดจากการที่ประชาชนทั่วไปใช้
+                <br>ในการรักษาพยาบาลเกิดจากการมีโรคแทรกซ้อนทั้งทางตรงและทางอ้อม
+                <br>  <br>
+                <img src="img/e11a973d8ae73efe9ac5b2bba4c4193a.gif" style="max-width:400px">
+                <br><br> ดังนั้น การลดน้ำหนักที่ดีและได้ผลคือการลดที่ปริมาณไขมันสะสมในร่างกาย 
+                <br>โดยมีวิธีการหลักๆอยู่ <font color="#ED407B">2 </font>วิธี คือ <a href="dietfoodmb.html"><u>ควบคุมอาหาร</u></a> และ <a href="Exercisemb.html"><u>การออกกำลังกาย</u></a> 
+                <br>โดยสองหลักการนี้จะทำงานกันเป็นทีม การควบคุมอาหารจะช่วยให้
+                <br>เราได้รับพลังงานและสารอาหารอย่างพอเหมาะ และการออกกำลังกาย
+                <br>จะช่วยให้ร่างกายแข็งแรง เสริมสร้างกล้ามเนื้อ ช่วยเพิ่มการเผาพลาญพลังงาน 
+                <br>และช่วยในการควบคุมน้ำหนัก <b>จึงขาดสิ่งใดสิ่งนึงไปไม่ได้</b>
+
+
+                    <br><br><br>
+              
+           
+            <a href="dietfoodmb.html" class="btn btn-dark" style="width:25%"><br><br>การควบคุมอาหาร<br>Diet<br><br><br></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+            <a href="Exercisemb.html" class="btn btn-dark" style="width:25%"><br><br>การออกกำลังกาย<br>Exercise<br><br><br></a>
+       
+          <br><br><br>
+
+          <br>และในปัจจุบันยังมีวิธีการควบคุมน้ำหนักยอดนิยม 
+          <br>ซึ่งเป็นวิธีที่สามารถลดน้ำหนักได้จริง และไม่ทำลายสุขภาพ นั่นก็คือ <b>การลดน้ำหนักแบบ IF</b>
+
+          <br><br><br>
+
+          <a href="controlwithifmb.html" class="btn btn-dark" style="width:25%"><br><br>ลดน้ำหนักให้ได้ผลด้วย<br>Intermittent Fasting (IF)<br><br><br></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+          </center>
+        </div>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+<script>
+    firebase.auth().onAuthStateChanged(function(user)
+    {
+        if(!user)
+        {
+            window.location.href = "index.html";
+        }
+    });
+</script>
+
+<!--java.index-->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script src="js/mobster.js"></script>
+
+</body>
+</html>

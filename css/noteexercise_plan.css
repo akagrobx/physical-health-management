@@ -1,0 +1,108 @@
+/* table */
+.jumbotron {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+    background-color:  #fff;
+    border-radius: .3rem;
+    }
+
+table th {
+    background: #EAB66A;
+    color: black;
+}
+
+body {
+    background-color: #FAF5D1; 
+}
+
+/* menu */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+*{
+    font-family: 'Sarabun', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: none;
+}
+
+li, a, button {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    width: 120px;
+}
+
+nav {
+    order: 1;
+
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li:nth-child(1) {
+    padding: 0 20px 0 0;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #3085d6;
+}
+
+.cta {
+    order: 2;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #EAB66A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #d33;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0);
+}
+   
+
+
+
+
+
+
+

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Mobile Application HTML5 Template">
+  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+  <title>Web Application For Physical Health Management</title>
+  <link rel="shortcut icon" href="img/iconn.png" type="image/x-icon">
+
+
+
+  <!--index.html-->
+  <link rel="stylesheet" href="vendor/animate/animate.css">
+  <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/mobster.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <!--font-->
+  <link href="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+
+  
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-storage.js"></script>  
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-floating">
+        <div class="container">
+          <a class="navbar-brand" href="indexmember.html">
+            <img src="img/iconn.png" alt="" width="120">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-lg-5 mt-3 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="indexmember.html">หน้าหลัก</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="foodmember.html">อาหาร</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="Weightcontrolmember.html">ควบคุมน้ำหนัก</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://fireboard.xyz/show--MRxyC8qlkapMZJNTw4x.html">Dashboard</a>
+              </li>
+            </ul>
+      
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+                <div class="dropdown narbar-right">
+                    <button 
+                    id="option-id"
+                    class="btn btn-light dropdown-toggle bg-dark text text-white"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >
+                        ยินดีต้อนรับ : )
+                    </button>
+      
+                    <div
+                    class="dropdown-menu"
+                    aria-labelledby="option-id"
+                    >
+      
+                    <a class="dropdown-item" href="info.html">
+                       ข้อมูลส่วนตัว
+                    </a>
+      
+            
+                    <a class="dropdown-item" href="noteexercise_plan.html">
+                      บันทึกสัดส่วน
+                    </a>
+      
+                  <a class="dropdown-item" href="menu_member.html">
+                    ไดอารี่อาหารของฉัน
+                 </a>
+      
+      
+                   
+                   <a class="dropdown-item" href="exerciseplanmb.html">
+                    แพลนออกกำลังกาย
+                  </a>
+      
+                    <a class="dropdown-item" href="sleepmb.html">
+                      บันทึกการนอน
+                  </a>
+      
+                    <a class="dropdown-item" onclick="logout()">
+                        ออกจากระบบ
+                    </a>
+      
+                  </div>
+              </div>
+      
+              </div>
+           </div>
+          </div>
+          </nav>
+          <br><br>
+
+
+          <div class="hero-caption pt-6">
+            <div class="container h-100">
+                <div class="page-section bg-white fg-white">
+                  <center><img src="img/หมวดอาหาร.PNG" style="max-width:300px"></center>
+                  <br>
+                  <br>
+                
+                      <!-- !PAGE CONTENT! -->
+                    <div class="w3-main w3-content w3-padding" style="max-width:800px;margin-top:10px">
+
+                    <!-- First Photo Grid-->
+                    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+                    <div class="w3-quarter">
+                      <a href ="proteinmember.html" ><img src="img/foodicon/protein.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">โปรตีน</font></h4></a>
+                    </div>
+
+                    <div class="w3-quarter">
+                        <a href ="oilmember.html" ><img src="img/foodicon/oil.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">ไขมัน</font></h4></a>
+                    </div>
+                    
+                    <div class="w3-quarter">
+                        <a href ="carbohydratemember.html" ><img src="img/foodicon/bread.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">คาร์โบไฮเดรต</font></h4></a>
+                    </div>
+
+                    <div a class="w3-quarter">
+                      <a href ="vegetablemember.html" ><img src="img/foodicon/vegetable.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">ผัก</font></h4></a>
+                    </div>
+
+                 
+                    <div a class="w3-quarter" style="margin-top:30px">
+                      <a href ="fruitmember.html" ><img src="img/foodicon/fruits.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">ผลไม้</font></h4></a>
+                    </div>
+
+                    <div a class="w3-quarter" style="margin-top:30px">
+                      <a href ="soupmember.html" ><img src="img/foodicon/soup.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">ซุป</font></h4></a>
+                    </div>
+
+                    <div a class="w3-quarter" style="margin-top:30px">
+                      <a href ="drinkmember.html" ><img src="img/foodicon/soft-drink.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">เครื่องดื่ม</font></h4></a>
+                    </div>
+
+                    <div a class="w3-quarter" style="margin-top:30px">
+                      <a href ="fastfoodemember.html" ><img src="img/foodicon/fast-food.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">อาหารฟาสต์ฟู้ด</font></h4></a>
+                    </div>
+
+                    <div a class="w3-quarter" style="margin-top:30px">
+                      <a href ="sweetmember.html" ><img src="img/foodicon/cupcake.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">ขนมหวาน</font></h4></a>
+                    </div>
+
+                    <div a class="w3-quarter" style="margin-top:30px">
+                      <a href ="singledishmember.html" ><img src="img/foodicon/singledish.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">อาหารจานเดียว</font></h4></a>
+                    </div>
+
+                    <div a class="w3-quarter" style="margin-top:30px">
+                      <a href ="sidesidhmember.html" ><img src="img/foodicon/singlefood.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">กับข้าว</font></h4></a>
+                    </div>
+
+                    <div a class="w3-quarter" style="margin-top:30px">
+                      <a href ="noodlemember.html" ><img src="img/foodicon/noodle.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">ก๋วยเตี๋ยว</font></h4></a>
+                    </div>
+                    </div>
+
+
+                    <div class="w3-container w3-padding-32 w3-center" style="margin-top:10px"> 
+                    <font color="#2D435B"> -------------------------------- เมนูอาหารคลีน สำหรับคนต้องการควบคุมอาหาร ---------------------------</font>
+                     <div a class="w3-quarter" style="margin-top:30px">
+                        <a href ="cleanfood.html" ><img src="img/foodicon/diet.png" style="max-width:60px">
+                          <br><br><h4><font color="#2D435B">อาหารคลีน</font></h4></a>
+                     </div>
+
+                     <div a class="w3-quarter"  style="margin-top:30px">
+                      <a href ="foodmember.html" ><img src="img/back.png" style="max-width:60px">
+                        <br><br><h4><font color="#2D435B">ย้อนกลับ</font></h4></a>
+                   </div>
+
+                    </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="js/index.js"></script>
+    <script>
+        firebase.auth().onAuthStateChanged(function(user)
+        {
+            if(!user)
+            {
+                window.location.href = "index.html";
+            }
+        });
+    </script>
+
+<!--java.index-->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script src="js/mobster.js"></script>
+
+</body>
+</html>

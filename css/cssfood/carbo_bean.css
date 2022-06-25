@@ -1,0 +1,110 @@
+/* menu */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+*{
+    font-family: 'Sarabun', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: none;
+}
+
+li, a, button {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    width: 120px;
+}
+
+nav {
+    order: 1;
+
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li:nth-child(1) {
+    padding: 0 20px 0 0;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #3085d6;
+}
+
+.cta {
+    order: 2;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #EAB66A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #d33;
+}
+
+/* body */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0);
+}
+
+#addCarbo_bean  {
+font-family: 'Sarabun', sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+#addCarbo_bean  td, #addCarbo_bean  th {
+border: 1px solid #EAB66A;
+padding: 8px;
+}
+
+#addCarbo_bean {background-color: #FAF5D1;}
+
+#addCarbo_bean tr:hover {background-color: #FAF5D1;}
+
+#addCarbo_bean th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: center;
+background-color: #EAB66A;
+color: black;
+}
+

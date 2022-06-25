@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Mobile Application HTML5 Template">
+  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+  <title>คาร์โบไฮเดรต</title>
+  <link rel="shortcut icon" href="img/iconn.png" type="image/x-icon">
+
+
+
+  <!--index.html-->
+  <link rel="stylesheet" href="vendor/animate/animate.css">
+  <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/mobster.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <!--font-->
+  <link href="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+
+  
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-storage.js"></script>  
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-floating">
+        <div class="container">
+          <a class="navbar-brand" href="indexmember.html">
+            <img src="img/iconn.png" alt="" width="120">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-lg-5 mt-3 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="indexmember.html">หน้าหลัก</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="foodmember.html">อาหาร</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="Weight_control.html">ควบคุมน้ำหนัก</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://fireboard.xyz/show--MRxyC8qlkapMZJNTw4x.html">Dashboard</a>
+              </li>
+            </ul>
+      
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+                <div class="dropdown narbar-right">
+                    <button 
+                    id="option-id"
+                    class="btn btn-light dropdown-toggle bg-dark text text-white"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >
+                        ยินดีต้อนรับ : )
+                    </button>
+      
+                    <div
+                    class="dropdown-menu"
+                    aria-labelledby="option-id"
+                    >
+      
+                    <a class="dropdown-item" href="info.html">
+                       ข้อมูลส่วนตัว
+                    </a>
+      
+                    
+            
+              <a class="dropdown-item" href="noteexercise_plan.html">
+                บันทึกสัดส่วน
+              </a>
+
+            <a class="dropdown-item" href="menu_member.html">
+              ไดอารี่อาหารของฉัน
+           </a>
+
+
+             
+             <a class="dropdown-item" href="exerciseplanmb.html">
+              แพลนออกกำลังกาย
+            </a>
+
+              <a class="dropdown-item" href="sleepmb.html">
+                บันทึกการนอน
+            </a>
+
+              <a class="dropdown-item" onclick="logout()">
+                  ออกจากระบบ
+              </a>
+      
+                  </div>
+              </div>
+      
+              </div>
+           </div>
+          </div>
+          </nav>
+          <br><br>
+
+<!--Box-->
+<div class="hero-caption pt-6">
+    <div class="container h-100">
+        <div class="page-section bg-white fg-white">
+          <center><table width=15% cellpadding="4" cellspacing="0" style="border:double 5px #2d435b;"><tr><td style="border:double 5px#2d435b;"><center><font color="#2d435b" size="5">คาร์โบไฮเดรต  </font></center></td></tr></table><br><br>
+          
+        
+               <a href="carboflourmb.html"><img src="img/flour.PNG"  style="max-width:200px"></a> &nbsp;&nbsp;&nbsp;
+              
+               <a href="carbobeanmb.html"><img src="img/grains.PNG"  style="max-width:200px"></a> &nbsp;&nbsp;&nbsp;
+
+
+               <div class="w-full text-center p-t-27 p-b-239" style="margin-top: 5%; font-size: 15px;">
+        
+                <a href="foodlistmember.html" class="text-dark">
+                    ย้อนกลับ
+                </a> 
+            </div>
+  
+               
+         </center>           
+        </div>
+    </div>
+</div>
+
+
+<script src="js/index.js"></script>
+<script>
+    firebase.auth().onAuthStateChanged(function(user)
+    {
+        if(!user)
+        {
+            window.location.href = "index.html";
+        }
+    });
+</script>
+
+<!--java.index-->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script src="js/mobster.js"></script>
+
+</body>
